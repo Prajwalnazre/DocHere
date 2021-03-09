@@ -1,10 +1,14 @@
 <div style="display: inline-flex ;">
     <div class="pieChart">
-        <!--canvas baseChart 
-            height="300" 
-            width="500" 
-            [datasets]="lineChartData">
-        </canvas-->
+        <canvas baseChart 
+            [data]="pieChartData" 
+            [labels]="pieChartLabels" 
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend">
+        </canvas>
+        
     </div>
     <div class="analyticsContainer">
         <div class="analyticsBox">

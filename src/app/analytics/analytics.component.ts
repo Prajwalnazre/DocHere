@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType } from 'chart.js';
-import { Label } from 'ng2-charts';
+import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip } from 'ng2-charts';
+ 
 
 @Component({
   selector: 'app-analytics',
@@ -9,7 +10,19 @@ import { Label } from 'ng2-charts';
 })
 export class AnalyticsComponent implements OnInit {
 
-  constructor() { }
+  public pieChartOptions: ChartOptions = {
+    responsive: true,
+  };
+  public pieChartLabels: Label[] = ['Women', 'Men'];
+  public pieChartData: SingleDataSet = [30, 50];
+  public pieChartType: ChartType = 'pie';
+  public pieChartLegend = true;
+  public pieChartPlugins = [];
+ 
+  constructor() {
+    monkeyPatchChartJsTooltip();
+    monkeyPatchChartJsLegend();
+  }
 
   ngOnInit(): void {
   }

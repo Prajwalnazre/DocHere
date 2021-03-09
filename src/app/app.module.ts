@@ -16,6 +16,7 @@ import { AnalyticsComponent } from './analytics/analytics.component';
 import { HttpClientModule } from '@angular/common/http'
 import { ChartsModule } from 'ng2-charts';
 
+
 @NgModule({
   declarations: [
     AppComponent,
