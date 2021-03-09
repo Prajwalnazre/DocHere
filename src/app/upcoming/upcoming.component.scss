@@ -1,0 +1,92 @@
+article{
+    padding: 10px;
+    margin-top: 1rem;
+    margin-left: 1rem;
+    width: 415px;
+    height: 315px;
+    background-color: skyblue;
+    //border-radius: 10px;
+    border: solid 1px #EFEFEF;
+
+    h3{
+        text-align: center;
+    }
+
+    .tableHolder{
+
+        width: 393px;
+        height: 250px;
+        overflow: scroll;
+        overflow-x: hidden;
+        //border-color: darkblue;
+        //border-style: solid;
+        
+
+    table {
+        width: 400px;
+        height: 250px;
+        background-color: rgb(235, 245, 245);
+        table-layout: fixed;
+        text-align: center;
+
+        .mat-column-token {
+            width: 50px;
+        }
+
+        .mat-column-name{
+            //color: hotpink;
+            width: 200px;
+        }
+
+        .mat-column-age {
+            width: 40px;
+        }
+
+        .mat-column-Gender {
+            width: 40px;
+        }
+
+        th{
+            background-color: rgb(4, 103, 121);
+            text-align: center;
+            color: rgb(206, 248, 250);
+            position: static;
+            font-size: 14px;
+        }
+
+        .mat-table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            display: table;
+            border-collapse: collapse;
+            margin: 0px;
+        }
+        .mat-row,
+        .mat-header-row {
+            display: table-row;
+        }
+        .mat-cell,
+        .mat-header-cell {
+            word-wrap: initial;
+            display: table-cell;
+            padding: 0px 5px;
+            line-break: unset;
+            width: auto;
+            white-space: nowrap;
+            //overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+    }
+
+}
+
+
+article:hover{
+    border: solid 1px #CCC;
+    -moz-box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    -webkit-box-shadow: 2px 2px 5px #000;
+    box-shadow: 2px 2px 5px #999;
+    transition: 0.5s;
+}

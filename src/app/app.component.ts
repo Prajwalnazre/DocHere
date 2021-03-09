@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+//import { MatIconModule } from '@angular/material/icon';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'doctorUI';
+  title = 'doctorUI'
+
 }

@@ -1,0 +1,104 @@
+article{
+    padding: 10px;
+    margin-top: 1rem;
+    margin-left: 0.7rem;
+    width: 842px;
+    height: 315px;
+    background-color: skyblue;
+    border: solid 1px #EFEFEF;
+    //border-radius: 10px;
+
+    h3{
+        text-align: center;
+    }
+
+    .tableHolder{
+
+        width: 820px;
+        height: 250px;
+        overflow: hidden;
+        //overflow: scroll;
+        overflow-x:hidden;
+        //border-color: darkblue;
+        //border-style: solid;
+        //transition: overflow-y 2s;
+        
+
+    table {
+        width: 820px;
+        height: 250px;
+        background-color: rgb(235, 245, 245);
+        table-layout: fixed;
+        text-align: center;
+
+
+        .mat-column-token {
+            width: min-content;
+        }
+
+        .mat-column-name{
+            //color: hotpink;
+            width: max-content;
+        }
+
+        .mat-column-age {
+            width: min-content;
+        }
+
+        .mat-column-Gender {
+            width: min-content;
+        }
+
+        .mat-column-visit {
+            width: 200px;
+            overflow:visible;
+        }
+
+        .mat-column-Fee {
+           // text-align:right;
+            
+        }
+
+        th{
+            background-color: rgb(4, 103, 121);
+            text-align: center;
+            color: rgb(206, 248, 250);
+            position: static;
+            font-size: 14px;
+        }
+
+        .mat-table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 1rem;
+            display: table;
+            border-collapse: collapse;
+            margin: 0px;
+        }
+        .mat-row,
+        .mat-header-row {
+            display: table-row;
+        }
+        .mat-cell,
+        .mat-header-cell {
+            word-wrap: initial;
+            display: table-cell;
+            padding: 0px 5px;
+            line-break: unset;
+            width: auto;
+            white-space: nowrap;
+            //overflow: hidden;
+            vertical-align: middle;
+        }
+    }
+    }
+
+}
+
+article:hover{
+    border: solid 1px #CCC;
+    -moz-box-shadow: 2px 2px 5px rgb(0, 0, 0);
+    -webkit-box-shadow: 2px 2px 5px #000;
+    box-shadow: 2px 2px 5px #999;
+    transition: 0.5s;
+}
