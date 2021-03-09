@@ -147,6 +147,10 @@
 	        margin: 10px;
         }
 
+        #onButton::after {
+            background-color: red;
+        }
+
         .cm-toggle:after {
             content: '';
             width: 30px;
@@ -168,6 +172,10 @@
             border-radius: 50%;
             background: rgb(255, 255, 255);
             box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.6);
+        }
+
+        #onButton:checked::after {
+            background-color: rgb(36, 253, 36);
         }
 
         .cm-toggle:checked:before {

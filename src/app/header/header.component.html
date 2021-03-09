@@ -8,7 +8,7 @@
     <div class="headerDisplay">
         <div class="inventoLogo"><img src="assets/InventoLogo-removebg-preview.png" alt="logo"></div>    
         <img src="assets/doctorAvatar.jpeg" alt="avatar" class="docAvatar">
-
+        
         
         <!--Test-->
 
@@ -53,9 +53,24 @@
     <div class="sayHello"><h2>Hello! {{docName}}</h2></div> 
 
     <div class="toggle">
-      <input type="radio" name="radio" class="cm-toggle"> Online
-      <input type="radio" name="radio" class="cm-toggle"> Offline
-      <input type="radio" name="radio" class="cm-toggle"> Clinic Only
+      <!--script>
+        var clinic = document.getElementsById('clinicButton');
+        var on = document.getElementById('onButton');
+        console.log("Script Working")
+        function changeStatus()
+        {
+          if(clinic.checked==true)
+          {
+            document.getElementById("onLabel").innerHTML = "Online";
+            console.log(document.getElementById("onLabel").innerHTML)
+          }
+        }
+
+      </script-->
+      <input id="onButton" type="checkbox" name="radio" class="cm-toggle" [checked]="onFlag" (change) = "changeStatus($event)"> 
+        <label id="onLabel" for="onButton">{{status}}</label>
+      <!--input type="radio" name="radio" class="cm-toggle"-->
+      <input id="clinicButton" type="checkbox" name="radio" class="cm-toggle" [checked]="clinicFlag" (change) = "handleClinic($event)"> Clinic Only
     </div>
 
     <!--div class="headerMenu">

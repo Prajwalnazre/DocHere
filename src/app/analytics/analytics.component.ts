@@ -23,10 +23,11 @@ export class AnalyticsComponent implements OnInit {
   // Pie Chart End
 
   public lineChartData: ChartDataSets[] = [
-    { data: [65, 59, 80, 81, 56, 55, 40], label: 'Age', backgroundColor: 'rgba(0, 194, 211, 1)', borderColor: 'fillPattern',
+    { data: [65, 59, 80, 81, 56, 55, 40,12,13,26,22,35,48,65,55,53,17,64,73,12], label: 'Age', backgroundColor: 'rgba(0, 194, 211, 1)', borderColor: 'fillPattern',
     pointBackgroundColor: 'fillPattern'},
   ];
-  public lineChartLabels: Label[] = ['1', '2', '3', '4', '5', '6', '7'];
+  public lineChartLabels: Label[] = ['1', '2', '3', '4', '5', '6', '7','8','9','10','11','12','13',
+'14','15','16','17','18','19','20'];
   public lineChartOptions: ChartOptions = {
     responsive: true,
 
