@@ -1,15 +1,5 @@
 <div style="display: inline-flex ;">
-    <div class="pieChart">
-        <canvas baseChart 
-            [data]="pieChartData" 
-            [labels]="pieChartLabels" 
-            [chartType]="pieChartType"
-            [options]="pieChartOptions"
-            [plugins]="pieChartPlugins"
-            [legend]="pieChartLegend">
-        </canvas>
-        
-    </div>
+    
     <div class="analyticsContainer">
         <div class="analyticsBox">
             <div class="boxTop">
@@ -30,4 +20,27 @@
             
         </div>
     </div>
+    <div class="pieChart">
+        <canvas baseChart 
+            [data]="pieChartData" 
+            [labels]="pieChartLabels" 
+            [chartType]="pieChartType"
+            [options]="pieChartOptions"
+            [plugins]="pieChartPlugins"
+            [legend]="pieChartLegend">
+        </canvas>    
+    </div>
+
+    <div class = "lineGraph" style="display: block;">
+        <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [plugins]="lineChartPlugins"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType">
+        </canvas>
+      </div>
+
+
 </div>

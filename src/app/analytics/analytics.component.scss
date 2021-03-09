@@ -59,9 +59,11 @@
 }
 
 .pieChart{
+    //height: fit-content;
+    width: min-content;
     padding: 5px;
     margin: 1rem;
-    margin-right: 0rem;
+    margin-left: 0rem;
     margin-top: 0.5rem;
     border-style: solid;
     border-color: skyblue;
