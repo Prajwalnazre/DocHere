@@ -16,66 +16,45 @@ export class HeaderComponent implements OnInit {
   onFlag = false;
   hClinic = "";
 
-  changeStatus(_e1: any )
+  changeStatus(_e: any)
   {
-    if(_e1.target.checked == true)
+    console.log(_e.target.checked);
+    //console.log(this.onFlag);
+    console.log("Change Status");
+
+    if(_e.target.checked == true)
     {
-      console.log("Online Now");
       this.status = "Online";
-      if(this.clinicFlag==true)
-      {
-        console.log("Clinic Flag Going Off");
-        this.clinicFlag = false;
-      }
-      /*else
-      {
-        this.clinicFlag = true;
-      }*/
-    }
-    else {
-      this.status = "Offline";
-      this.onFlag = false;
-      console.log("I am offline now")
-    }
-
-  }  
-
-  handleClinic(_e: any) 
-  {
-    console.log("I am on");
-    console.log(this.clinicFlag);
-    if(this.onFlag == true)
-    {
-      console.log("Seems like Online")
-      if(_e.target.checked==true)
-      {
-        console.log("Become Offline")
-        //this.hClinic="clinic"; 
-        this.onFlag=false;
-        this.status = "Offline"
-        //console.log(this.onFlag);
-      }
-      else
-      {
-        console.log("Become Online Man")
-        //this.hClinic=" ";
-        this.status = "Online";
-        this.onFlag=true;
-        console.log(this.onFlag);
-      }
+      this.onFlag = true;
+      this.clinicFlag = false;
     }
     else
     {
-      this.onFlag = false;
-      //this.clinicFlag = false;
+      this.status = "Offline";
     }
-    
+
   }
 
+  handleClinic(_e1: any)
+  {
 
+    if(_e1.target.checked==true)
+    {
+      console.log(_e1.target.checked);
+      console.log("Handle Clinic");
+      console.log(this.onFlag);
+      if(this.onFlag==true)
+      {
+        this.onFlag = false;
+        console.log("Trying to change.......");
+        console.log(this.onFlag);
+        this.clinicFlag = true;
+        this.status = "Offline";
+      }
+      
+    }
 
-
-
+  }
 
   constructor() { }
 

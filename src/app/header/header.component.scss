@@ -1,44 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans&display=swap');
+  
+
 .headerContainer
 {
     background-color: rgb(239, 248, 252);
-    height: 100px;
-    display: inline;
+    height: fit-content;
+    display: grid;
+    grid-template-columns: 20% 36% 36% 8%;
+    //padding: 5px;
+
+    .inventoLogo 
+    {
+        //position: absolute;
+        //width: 50%;
+        //display: inline;
+        //top: 5px;
+        //left: 10px;
+        padding-top: 10px;
+        margin: 1rem;
+        //background-color: saddlebrown;
+
+    }
+
+    
 
     .headerDisplay {
-        background-color: aqua;
-        display: inline-block;
+        //background-color: aqua;
         height: auto;
-        //width: auto;
+        padding: 10px;
+        padding-bottom: 0px;
+        width: fit-content;
         margin: 5px;
+        margin-bottom: 0px;
+        float: right;
         //border-style: solid;
-        //float: right;
-        
-        .docAvatar {
-           // background-color:red;
-            //border-style: solid;
-            display: inline;
-            vertical-align: middle;
-            display: flex;
-            width: 70px;
-            height: 70px;
-            border-radius: 50%;
-            position: absolute;
-            right: 10px;
-            border: solid 4px whitesmoke;
-            
-        }
 
-        .dropdownConents{
-            overflow: hidden;
-            //transition: all .3s ease;
-           // line-height: 0;
-            padding: 3px;
-            color: transparent;
-            //-webkit-font-smoothing: antialiased;
-            border-radius: 15px;
+
+        .docAvatar {
+            // background-color:red;
+             //border-style: solid;
+             //display: inline;
+             float: right;
+             vertical-align: middle;
+             //display: flex;
+             width: 70px;
+             height: 70px;
+             border-radius: 50%;
+             //position: absolute;
+             //right: 10px;
+             border: solid 4px whitesmoke;
+             
         }
     
-        
         .docAvatar:hover {
             //opacity: 60%;
             cursor: pointer;
@@ -47,83 +60,26 @@
             box-shadow: 3px 2px 5px #999;
             transition: 0.5s;
         }
-    
-        .inventoLogo {
-            position: absolute;
-            //width: 50%;
-            //display: inline;
-            top: 5px;
-            left: 10px;
-            padding: 10px;
-            margin-left: 10px;
-           //background-color: saddlebrown;
-    
-        }
-    
-        
-      /*  .headerIcons{
-            display: flex;
-            position: absolute;
-            padding: 10px;
-            margin: 10px;
-            right: 60px;
-            //background-color: beige;
-        
-            button {
-                  border-radius: 5px;
-                  outline: none;
-                  border: none;
-                  //display: none;
-                  cursor: pointer;
-                  background-color: white;
-        
-                  mat-icon {
-                    transform: scale(1.25);
-                  }
-            }
-    
-    
-        }
-    
-        .headerIcons:hover {
-            transform:scale(1.1);
-        }*/
         
     }
 
-    .headerMenu {
-        margin-top: 25px;
-        justify-content: center;
-        text-align: center;
-        font-size: 20px;
-        //vertical-align: middle;
-        ul{
-            list-style: none;
-            margin-left: 15rem;
-            display:inline-flex;
-            //background-color: lightcoral;
-            //padding: 10px;
-            width: 400px;
-            text-align: center;
-            li{
-                padding-right: 15px;
-            }
-        }
-    }
-    
     .sayHello {
-        display: inline;
+        //display: inline;
         //background-color: slategrey;
+        width: fit-content;
         justify-content: center;
         float: left;
         padding: 10px;
-        margin-left: 250px;
-        margin-top: 40px;
+        padding-bottom: 0px;
+        margin-left: 15px;
+        margin-top: 45px;
+        margin-bottom: 0px;
         
         h2{
-            font-family: sans-serif;
+            font-family: 'PT Sans', sans-serif;
+            font-size: 23px;
             text-align: center;
-            width: 350px;
+            width: fit-content;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -133,9 +89,15 @@
 
     .toggle {
 
-        margin-top: 45px;
+        margin-top: 55px;
         float: right;
-        margin-right: 10rem;
+        width: fit-content;
+        //margin-right: 2rem;
+        padding-left: 12rem;
+        padding-right: 10px;
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        //background-color: lightgreen;
 
         .cm-toggle{
             -webkit-appearance: none;
@@ -201,3 +163,7 @@
 
     }
 }
+    
+    
+
+
