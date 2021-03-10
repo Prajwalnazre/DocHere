@@ -5,3 +5,25 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Importing Bootstrap SCSS file. */
 @import '~bootstrap/scss/bootstrap';
+
+::-webkit-scrollbar-track
+{
+	//-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+    //box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: rgb(166, 225, 248);
+}
+
+::-webkit-scrollbar
+{
+	width: 7px;
+    border-radius: 50px;
+	//background: rgb(2,0,36);
+    //background: linear-gradient(190deg, rgba(2,0,36,1) 0%, rgba(9,46,121,1) 45%, rgba(0,212,255,1) 100%);
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: rgb(4, 103, 121);
+    //background: linear-gradient(190deg, rgb(4, 103, 121) 0%,  rgb(235, 245, 245) 100%);
+	border-radius: 50px;
+}
