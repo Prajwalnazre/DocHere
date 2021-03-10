@@ -16,7 +16,7 @@ export class AnalyticsComponent implements OnInit {
   };
   public pieChartLabels: Label[] = ['Women', 'Men'];
   public pieChartData: SingleDataSet = [65, 80];
-  public pieChartType: ChartType = 'pie';
+  public pieChartType: ChartType = 'doughnut';
   public pieChartLegend = true;
   public pieChartPlugins = [];
 
@@ -41,6 +41,8 @@ export class AnalyticsComponent implements OnInit {
   public lineChartLegend = true;
   public lineChartType : ChartType = 'line';
   public lineChartPlugins = [];
+
+  //timeFrame = ['Today','Yesterday']
  
   constructor() {
     monkeyPatchChartJsTooltip();

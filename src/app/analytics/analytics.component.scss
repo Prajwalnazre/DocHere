@@ -61,7 +61,7 @@
 .pieChart{
     //height: fit-content;
     height: 180px;
-    width: min-content;
+    width: 280px;
     padding: 5px;
     margin: 1rem;
     margin-left: 0rem;
@@ -84,6 +84,7 @@
     margin: 1rem;
     margin-left: 0rem;
     margin-top: 0.5rem;
+    margin-right: 0.5rem;
     border-style: solid;
     border-color: skyblue;
     //background-color: red;
@@ -105,4 +106,39 @@
 
 .lineGraph:hover{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+}
+
+.buttons{
+    display: block;
+    margin: 10px;
+    margin-left: 0px;
+    margin-top: 5px;
+    //background-color: darkgreen;
+    width: fit-content;
+    padding: 5px;
+    
+    .mat-icon{
+        vertical-align: middle;
+        float: left;
+    }
+
+    button{
+        background-color:rgb(4, 103, 121);
+        color: whitesmoke;
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+        border-radius: 5px;
+        height: 35px;
+        border-color: rgb(2, 80, 94);
+        box-shadow: 0px 0px 0px 0px rgb(4, 103, 121);
+        transition: box-shadow 1s ease-in-out;
+        transition: transform 0.4s ease-in-out ;
+    }
+
+    button:hover {
+        background-color: darken(rgb(4,103,121), 6%);
+        //box-shadow: -0px 0px 10px -1px rgb(4, 0, 0);
+        transform: scale(1.04);
+    }
 }

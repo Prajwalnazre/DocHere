@@ -41,7 +41,30 @@
           [chartType]="lineChartType">
         </canvas>
         <h3>Average Age : {{avgAge}}</h3>
-      </div>
+    </div>
+
+    <div class = "lineGraph" style="display: block;">
+        <canvas baseChart
+          [datasets]="lineChartData"
+          [labels]="lineChartLabels"
+          [options]="lineChartOptions"
+          [plugins]="lineChartPlugins"
+          [legend]="lineChartLegend"
+          [chartType]="lineChartType">
+        </canvas>
+        <h3>Average Duration : {{avgAge}}</h3>
+    </div>
+
+    <div class="buttons">
+        <!--select ng-model="selectedName" ng-options="x for x in timeFrame">
+        </select-->
+        <button><mat-icon>today</mat-icon> Calender</button>
+        <button><mat-icon>drafts</mat-icon>Messages</button>
+        <button><mat-icon>feedback</mat-icon>Feedback</button> 
+        <!--button>Calender</button>
+        <button>Inbox <mat-icon></mat-icon></button>
+        <button>Feedback <mat-icon></mat-icon></button-->
+    </div>
 
 
 </div>
