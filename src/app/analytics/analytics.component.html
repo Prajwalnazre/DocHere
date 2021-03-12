@@ -1,3 +1,4 @@
+   
 <div style="display: inline-flex ;">
     
     <div class="analyticsContainer">
@@ -59,13 +60,16 @@
         <!--select ng-model="selectedName" ng-options="x for x in timeFrame">
         </select-->
         
+        
         <button><mat-icon>today</mat-icon> Calender</button>
         <button><mat-icon>drafts</mat-icon>Messages</button>
-        <button><mat-icon>feedback</mat-icon>Feedback</button> 
+        <button><mat-icon>feedback</mat-icon>Feedback</button>
+        <button><mat-icon>date_range</mat-icon>Date Range</button> 
         <!--button>Calender</button>
         <button>Inbox <mat-icon></mat-icon></button>
         <button>Feedback <mat-icon></mat-icon></button-->
+        
     </div>
-
-
+    
 </div>
+<full-calendar [options]="calendarOptions"></full-calendar>

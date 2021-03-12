@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -15,7 +14,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AnalyticsComponent } from './analytics/analytics.component';
 import { HttpClientModule } from '@angular/common/http'
 import { ChartsModule } from 'ng2-charts';
+import { FullCalendarModule } from '@fullcalendar/angular'; // the main connector. must go first
+import dayGridPlugin from '@fullcalendar/daygrid'; // a plugin
+import interactionPlugin from '@fullcalendar/interaction'; 
 
+FullCalendarModule.registerPlugins([ // register FullCalendar plugins
+  dayGridPlugin,
+  interactionPlugin
+]);
 
 @NgModule({
   declarations: [
@@ -36,7 +42,8 @@ import { ChartsModule } from 'ng2-charts';
     ReactiveFormsModule,
     NgbModule,
     HttpClientModule,
-    ChartsModule
+    ChartsModule,
+    FullCalendarModule
   ],
   providers: [],
   bootstrap: [AppComponent]

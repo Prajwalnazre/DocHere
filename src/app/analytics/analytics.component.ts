@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip, Color } from 'ng2-charts';
+import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
  
 
 @Component({
@@ -50,6 +51,20 @@ export class AnalyticsComponent implements OnInit {
   }
 
   avgAge = 25;
+
+  calendarOptions: CalendarOptions = {
+    initialView: 'dayGridMonth',
+    dateClick: this.handleDateClick.bind(this), // bind is important!
+    events: [
+      { title: 'event 1', date: '2019-04-01' },
+      { title: 'event 2', date: '2019-04-02' }
+    ]
+  };
+
+  handleDateClick(arg: { dateStr: string; }) {
+    //alert('date click! ' + arg.dateStr)
+    console.log(arg.dateStr);
+  }
 
   ngOnInit(): void {
   }
