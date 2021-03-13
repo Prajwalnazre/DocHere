@@ -1,8 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Inject } from '@angular/core';
 import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip, Color } from 'ng2-charts';
 import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
- 
+import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+
 
 @Component({
   selector: 'app-analytics',
@@ -42,6 +43,7 @@ export class AnalyticsComponent implements OnInit {
   public lineChartLegend = true;
   public lineChartType : ChartType = 'line';
   public lineChartPlugins = [];
+  modalService: any;
 
   //timeFrame = ['Today','Yesterday']
  
@@ -66,7 +68,14 @@ export class AnalyticsComponent implements OnInit {
     console.log(arg.dateStr);
   }
 
-  ngOnInit(): void {
+  isVisible = false;
+  calenderopen(){
+    this.isVisible = true;
+    //var c = document.getElementById("fullCalender");
+    //console.log(c?.style.backgroundColor)
+  }
+
+    ngOnInit(): void {
   }
 
 }

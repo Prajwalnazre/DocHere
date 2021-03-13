@@ -4,10 +4,15 @@
 .headerContainer
 {
     background-color: rgb(239, 248, 252);
+    //background-color: darkgoldenrod;
     height: fit-content;
     //display: block;
+    width: 100%;
     display: grid;
-    grid-template-columns: 20% 46% 26% 8%;
+    grid-template-columns: 0.6fr 1fr 1fr 0.2fr;
+    grid-gap: 0.3rem;
+    position: relative;
+
     //padding: 5px;
 
     .inventoLogo 
@@ -17,8 +22,9 @@
         //display: inline;
         //top: 5px;
         //left: 10px;
+        padding-left: 15px;
         padding-top: 5px;
-        margin: 1rem;
+        //margin: 1rem;
         //background-color: saddlebrown;
 
     }
@@ -28,15 +34,16 @@
     .headerDisplay {
         //background-color: aqua;
         height: auto;
-        padding: 10px;
-        padding-bottom: 0px;
-        width: fit-content;
-        margin: 5px;
-        margin-bottom: 0px;
+        //padding: 10px;
+        //padding-bottom: 0px;
+        //width: fit-content;
+        //margin: 5px;
+        //margin-bottom: 0px;
         float: right;
         //border-style: solid;
         position: relative;
-
+        padding-right: 6px;
+        padding-top: 4px;
 
         .docAvatar {
             // background-color:red;
@@ -48,6 +55,7 @@
              width: 70px;
              height: 70px;
              border-radius: 50%;
+             //padding: 5px;
              //position: absolute;
              //right: 10px;
              border: solid 4px whitesmoke;
@@ -68,21 +76,26 @@
     .sayHello {
         //display: inline;
         //background-color: slategrey;
-        width: fit-content;
-        justify-content: center;
-        float: left;
-        padding: 10px;
-        padding-bottom: 0px;
-        margin-left: 15px;
-        margin-top: 45px;
-        margin-bottom: 0px;
-        position: relative;
+        //width: 100px; 
+        //justify-content: center;
+        //text-align: center;
+        //padding: 10px;
+        //padding-bottom: 0px;
+        //margin-left: 15px;
+        //margin-top: 45px;
+        //margin-bottom: 0px;
+        height: auto;
+        overflow: hidden;
+        //background-color: #0388e0;
         
         h2{
             font-family: 'PT Sans', sans-serif;
             font-size: 23px;
             text-align: center;
-            width: fit-content;
+            //width: fit-content;
+            padding-top: 1rem;
+            //border-style: groove;
+            //margin-top: 1rem;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
@@ -92,16 +105,19 @@
 
     .toggle {
 
-        margin-top: 55px;
+        //margin-top: 55px;
         float: right;
-        width: fit-content;
+        text-align: center;
+        padding-top: 1rem;
+        //height: 100%;
+        //width: fit-content;
         //margin-right: 2rem;
-        padding-left: 2rem;
-        padding-right: 10px;
-        padding-bottom: 0px;
+        //padding-left: 2rem;
+        //padding-right: 10px;
+        //padding-bottom: 0px;
         position: relative;
-        margin-bottom: 0px;
-        //background-color: lightgreen;
+        //margin-bottom: 0px;
+         //background-color: lightgreen;
 
         .cm-toggle{
             -webkit-appearance: none;

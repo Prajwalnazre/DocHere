@@ -61,7 +61,7 @@
         </select-->
         
         
-        <button><mat-icon>today</mat-icon> Calender</button>
+        <button (click) = "calenderopen()"><mat-icon>today</mat-icon> Calender</button>
         <button><mat-icon>drafts</mat-icon>Messages</button>
         <button><mat-icon>feedback</mat-icon>Feedback</button>
         <button><mat-icon>date_range</mat-icon>Date Range</button> 
@@ -70,6 +70,11 @@
         <button>Feedback <mat-icon></mat-icon></button-->
         
     </div>
+
+    <div id="fullCalender" [style.display] = "isVisible ? 'block' : 'none'">
+    </div>
     
 </div>
-<full-calendar [options]="calendarOptions"></full-calendar>
+
+<!--full-calendar [options]="calendarOptions" style="background-color: rgb(255, 255, 255); padding: 15px; height: fit-content; width: max-content;"></full-calendar-->
+    
