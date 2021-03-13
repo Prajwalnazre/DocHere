@@ -1,5 +1,5 @@
    
-<div style="display: inline-flex ;">
+<div style="display: grid ; grid-template-columns: 0.8fr 1fr 1fr 1fr 0.7fr;">
     
     <div class="analyticsContainer">
         <div class="analyticsBox">
@@ -32,7 +32,7 @@
         </canvas>    
     </div>
 
-    <div class = "lineGraph" style="display: block;">
+    <div class = "lineGraph">
         <canvas baseChart
           [datasets]="lineChartData"
           [labels]="lineChartLabels"
@@ -44,7 +44,7 @@
         <h3>Average Age : {{avgAge}}</h3>
     </div>
 
-    <div class = "lineGraph" style="display: block;">
+    <div class = "lineGraph">
         <canvas baseChart
           [datasets]="lineChartData"
           [labels]="lineChartLabels"
@@ -71,8 +71,8 @@
         
     </div>
 
-    <div id="fullCalender" [style.display] = "isVisible ? 'block' : 'none'">
-    </div>
+    <!--div id="fullCalender" [style.display] = "isVisible ? 'block' : 'none'">
+    </div-->
     
 </div>
 
