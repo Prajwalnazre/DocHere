@@ -11,3 +11,24 @@ body::-webkit-scrollbar {
     display: none;
 }
 
+#tableContainer {
+    display: grid;
+    grid-template-columns: 32% 68%;
+    grid-gap: 5px;
+    margin-left: 15px;
+    margin-right: 5px;
+}
+
+@media only screen and (max-width: 1100px) {
+    #tableContainer {
+        display:grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr ;
+        grid-gap: 5px;
+        //background-color: cornflowerblue;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+}
+

@@ -1,8 +1,21 @@
+@media only screen and (max-width:1100px)
+    {
+        article {
+            width: 50%;
+            justify-content: center;
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            align-items: center;
+            //bsackground-color: red;
+        
+        }
+    }
 article{
     padding: 10px;
     margin-top: 1rem;
-    margin-left: 1rem;
-    width: 415px;
+    //margin-left: 1rem;
+    //width: 415px;
     height: 315px;
     background-color: skyblue;
     //border-radius: 10px;
@@ -14,36 +27,38 @@ article{
 
     .tableHolder{
 
-        width: 393px;
+        //width: 393px;
         height: 250px;
         overflow: scroll;
         overflow-x: hidden;
         //border-color: darkblue;
         //border-style: solid;
         
+    
 
     table {
-        width: 400px;
+        //width: 400px;
         height: 250px;
+        width: 100%;
         background-color: rgb(235, 245, 245);
         table-layout: fixed;
         text-align: center;
 
         .mat-column-token {
-            width: 50px;
+           // width: 50px;
         }
 
         .mat-column-name{
             //color: hotpink;
-            width: 200px;
+           // width: 200px;
         }
 
         .mat-column-age {
-            width: 40px;
+           // width: 40px;
         }
 
         .mat-column-Gender {
-            width: 40px;
+            //width: 40px;
         }
 
         th{
@@ -113,3 +128,4 @@ article:hover{
     //background: linear-gradient(190deg, rgb(4, 103, 121) 0%,  rgb(235, 245, 245) 100%);
 	border-radius: 50px;
 }
+

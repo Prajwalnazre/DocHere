@@ -2,8 +2,12 @@ article{
 
     padding: 10px;
     margin-top: 1rem;
-    margin-left: 0.7rem;
-    width: 842px;
+    //margin-left: 0.7rem;
+    margin-right: 10px;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    //width: 842px;
     height: 315px;
     background-color: skyblue;
     border: solid 1px #EFEFEF;
@@ -14,8 +18,8 @@ article{
     }
 
     .tableHolder{
-
-        width: 820px;
+        text-align: center;
+        //width: 820px;
         height: 250px;
         overflow: hidden;
         //overflow: scroll;
@@ -26,8 +30,9 @@ article{
         
 
     table {
-        width: 820px;
+       // width: 820px;
         height: 250px;
+        width: 100%;
         background-color: rgb(235, 245, 245);
         table-layout: fixed;
         text-align: center;
@@ -51,7 +56,7 @@ article{
         }
 
         .mat-column-visit {
-            width: 200px;
+           // width: 200px;
             overflow:visible;
         }
 
