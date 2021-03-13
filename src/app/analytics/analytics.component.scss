@@ -1,7 +1,25 @@
+#outerAnalytics{
+    display: grid ; 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    //background-color: cornsilk;
+    grid-template-areas: "analyticsContainer pieChart lineGraph1 lineGraph2 buttons";
+    max-height: 450px;
+    /*display: grid;
+    grid-template-columns: 32% 68%;
+    grid-gap: 5px;
+    margin-left: 15px;
+    margin-right: 5px;*/
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
 .analyticsContainer {
-    background-color: skyblue;
+    //background-color: red;
+    //height: auto;
     height: 180px;
-    width: fit-content;
+    //width: fit-content;
+    max-width: 150px;
     margin: 1rem;
     margin-top: 0.5rem;
     //margin-bottom: 10rem;
@@ -10,8 +28,10 @@
     //border-radius: 10px;
     display: block;
     min-width: 100px;
+    background-color: skyblue;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s ease-in-out;
+    grid-area: analyticsContainer;
 
     .analyticsBox{
         background-color: skyblue;
@@ -61,8 +81,12 @@
 
 .pieChart{
     //height: fit-content;
+    grid-area: pieChart;
+    height: auto;
     height: 180px;
     //width: 280px;
+    //width: auto;
+    width: min-content;
     padding: 5px;
     margin: 1rem;
     margin-left: 0rem;
@@ -70,7 +94,7 @@
     margin-top: 0.5rem;
     border-style: solid;
     border-color: skyblue;
-    //background-color: red;
+    //background-color: brown;
     box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
     transition: box-shadow 0.3s ease-in-out;
     transition: transform 0.4s ease-in-out;
@@ -81,9 +105,11 @@
     transform: scale(1.01);
 }
 
-.lineGraph{
+.lineGraph1{
+    //height: auto;
     height: 180px;
     width: min-content;
+    grid-area: lineGraph1;
     padding: 5px;
     margin: 1rem;
     margin-left: 0rem;
@@ -109,19 +135,59 @@
     }
 }
 
-.lineGraph:hover{
+.lineGraph1:hover{
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
     transform: scale(1.01);
 
 }
 
+.lineGraph2{
+    height: 180px;
+    //height: auto;
+    width: min-content;
+    grid-area: lineGraph2;
+    padding: 5px;
+    margin: 1rem;
+    margin-left: 0rem;
+    margin-top: 0.5rem;
+    margin-right: 0.5rem;
+    border-style: solid;
+    border-color: skyblue;
+    //background-color: orange;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.15);
+    transition: box-shadow 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    text-align: center;
+
+    canvas{
+        width: min-content;
+        height: 140px;
+    }
+    
+    h3{
+        font-size: 10px;
+        padding-top: 0px;
+        padding-bottom: 5px;
+    }
+}
+
+.lineGraph2:hover{
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.4);
+    transform: scale(1.01);
+
+}
+
+
 .buttons{
+    grid-area: buttons;
+    //height: auto;
+    height: 180px;
     display: block;
     margin: 10px;
     margin-left: 0px;
     margin-top: 5px;
     //background-color: darkgreen;
-    width: fit-content;
+    //width: fit-content;
     padding: 5px;
     
     .mat-icon{
@@ -132,6 +198,7 @@
     button{
         background-color:rgb(4, 103, 121);
         color: whitesmoke;
+        min-width: 130px;
         margin-bottom: 10px;
         width: 100%;
         text-align: center;
@@ -142,6 +209,7 @@
         box-shadow: 0px 0px 0px 0px rgb(4, 103, 121);
         transition: box-shadow 1s ease-in-out;
         transition: transform 0.4s ease-in-out ;
+
     }
 
     button:hover {
@@ -176,3 +244,49 @@
     left: 30%;
 
 }
+
+@media only screen and (max-width: 1260px) {
+    #outerAnalytics{
+        //display:block;
+        //background-color: burlywood;
+        //display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "pieChart lineGraph2 lineGraph1 analyticsContainer"
+        "buttons buttons buttons buttons";
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    #button1 {
+        width: 24%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #button2 {
+        width: 24%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #button3 {
+        width: 24%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+    #button4 {
+        width: 24%;
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .lineGraph1 {
+        margin-left: 15px;
+    }
+
+    .pieChart {
+        margin-left: 1rem;
+    }
+
+
+  }
