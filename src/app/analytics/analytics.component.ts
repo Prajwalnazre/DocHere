@@ -75,6 +75,7 @@ export class AnalyticsComponent implements OnInit {
     //console.log(c?.style.backgroundColor)
   }
 
+  
     ngOnInit(): void {
   }
 
