@@ -1,20 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
 article{
 
     padding: 10px;
     margin-top: 1rem;
     //margin-left: 0.7rem;
     margin-right: 10px;
-    //text-align: center;
+    //  text-align: center;
     //justify-content: center;
     align-items: center;
     //width: 842px;
-    height: 315px;
+    height: 350px;
     background-color: skyblue;
     border: solid 1px #EFEFEF;
     //border-radius: 10px;
 
     h3{
         text-align: center;
+    }
+
+    #pastHeading {
+        text-align: left; 
+        padding-top: 25px; 
+        padding-left: 14%;
+        font-family: 'Poppins';
+        font-size: 23px;
     }
 
     .tableHolder{

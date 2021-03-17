@@ -1,8 +1,10 @@
 #outerAnalytics{
     display: grid ; 
+    //grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-columns: 12% 25% 25% 25% 13%;
     //background-color: cornsilk;
     grid-template-areas: "analyticsContainer pieChart lineGraph1 lineGraph2 buttons";
+    //grid-template-areas: "analyticsContainer pieChart lineGraph1 lineGraph2";
     max-height: 450px;
     /*display: grid;
     grid-template-columns: 32% 68%;

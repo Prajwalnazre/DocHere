@@ -1,7 +1,7 @@
 
 <article>
   <div style="display: block;">
-    <div id="searchBar" style="display: inline-flex;">
+    <div id="searchBar" style="display: grid; grid-template-columns: 30% 70%;">
       <mat-form-field appearance="outline" style="height: 80px;">
         <mat-label>Select Date Range</mat-label>
         
@@ -16,7 +16,7 @@
       </mat-form-field>
       <!-- <h1>{{range.value.start | date}}</h1>
       <h1>{{range.value.end | date}}</h1> -->
-      <h3>Patients Visited</h3>
+      <div id="pastHeading" style=""><p>Patients Visited</p></div>
     </div>
 
     <div class="tableHolder" #tabH (mouseenter)="enableScrolling()" [style.overflow-y]="flag ? 'scroll':'hidden'"
