@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
-
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule, MAT_DATE_LOCALE } from '@angular/material/core'; 
 import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,6 +23,9 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatButtonModule } from '@angular/material/button';
+import { BsDatepickerModule } from 'ngx-bootstrap/datepicker';  
+import * as $ from 'jquery';
+import { MAT_FORM_FIELD_DEFAULT_OPTIONS } from '@angular/material/form-field';
 
 FullCalendarModule.registerPlugins([ // register FullCalendar plugins
   dayGridPlugin,
@@ -52,10 +56,15 @@ FullCalendarModule.registerPlugins([ // register FullCalendar plugins
     MatDialogModule,
     MatFormFieldModule,
     MatInputModule,
-    MatButtonModule
+    MatButtonModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    BsDatepickerModule
 
   ],
-  providers: [],
+  providers: [
+     {provide: MAT_DATE_LOCALE, useValue: 'en-GB'},
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

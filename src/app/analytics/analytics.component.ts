@@ -3,6 +3,8 @@ import { ChartOptions, ChartType, ChartDataSets } from 'chart.js';
 import { SingleDataSet, Label, monkeyPatchChartJsLegend, monkeyPatchChartJsTooltip, Color } from 'ng2-charts';
 import { CalendarOptions } from '@fullcalendar/angular'; // useful for typechecking
 import { MatDialogRef, MAT_DIALOG_DATA } from '@angular/material/dialog';
+import {FormGroup, FormControl} from '@angular/forms';
+
 
 
 @Component({
@@ -75,6 +77,11 @@ export class AnalyticsComponent implements OnInit {
     //console.log(c?.style.backgroundColor)
   }
 
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl()
+    
+  });
   
     ngOnInit(): void {
   }

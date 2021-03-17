@@ -36,11 +36,15 @@
             "styles": [
               "./node_modules/@angular/material/prebuilt-themes/indigo-pink.css",
               "src/styles.scss",
-              "./node_modules/bootstrap/dist/css/bootstrap.min.css"
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.css"
             ],
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
-              "./node_modules/bootstrap/dist/js/bootstrap.min.js"
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "https://cdn.jsdelivr.net/jquery/latest/jquery.min.js",
+              "https://cdn.jsdelivr.net/momentjs/latest/moment.min.js",
+              "https://cdn.jsdelivr.net/npm/daterangepicker/daterangepicker.min.js"
             ]
           },
           "configurations": {

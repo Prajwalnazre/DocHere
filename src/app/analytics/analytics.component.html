@@ -1,80 +1,74 @@
-   
+<head>
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+</head>
+
 <div id="outerAnalytics">
-    
-    <div class="analyticsContainer">
-        <div class="analyticsBox">
-            <div class="boxTop">
-                0
-            </div>
-            <div class="boxBottom">
-                Patients Visit Today
-            </div>
-            
-        </div>
-        <div class="analyticsBox">
-            <div class="boxTop">
-                10
-            </div>
-            <div class="boxBottom">
-                In Queue
-            </div>
-            
-        </div>
-    </div>
-    <div class="pieChart" id="pie">
-        <canvas baseChart 
-            [data]="pieChartData" 
-            [labels]="pieChartLabels" 
-            [chartType]="pieChartType"
-            [options]="pieChartOptions"
-            [plugins]="pieChartPlugins"
-            [legend]="pieChartLegend">
-        </canvas>    
-    </div>
 
-    <div class = "lineGraph1">
-        <canvas baseChart
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [plugins]="lineChartPlugins"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType">
-        </canvas>
-        <h3>Average Age : {{avgAge}}</h3>
-    </div>
+  <div class="analyticsContainer">
+    <div class="analyticsBox">
+      <div class="boxTop">
+        0
+      </div>
+      <div class="boxBottom">
+        Patients Visit Today
+      </div>
 
-    <div class = "lineGraph2">
-        <canvas baseChart
-          [datasets]="lineChartData"
-          [labels]="lineChartLabels"
-          [options]="lineChartOptions"
-          [plugins]="lineChartPlugins"
-          [legend]="lineChartLegend"
-          [chartType]="lineChartType">
-        </canvas>
-        <h3>Average Duration : {{avgAge}}</h3>
     </div>
+    <div class="analyticsBox">
+      <div class="boxTop">
+        10
+      </div>
+      <div class="boxBottom">
+        In Queue
+      </div>
 
-    <div class="buttons">
-        <!--select ng-model="selectedName" ng-options="x for x in timeFrame">
+    </div>
+  </div>
+  <div class="pieChart" id="pie">
+    <canvas baseChart [data]="pieChartData" [labels]="pieChartLabels" [chartType]="pieChartType"
+      [options]="pieChartOptions" [plugins]="pieChartPlugins" [legend]="pieChartLegend">
+    </canvas>
+  </div>
+
+  <div class="lineGraph1">
+    <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+      [plugins]="lineChartPlugins" [legend]="lineChartLegend" [chartType]="lineChartType">
+    </canvas>
+    <h3>Average Age : {{avgAge}}</h3>
+  </div>
+
+  <div class="lineGraph2">
+    <canvas baseChart [datasets]="lineChartData" [labels]="lineChartLabels" [options]="lineChartOptions"
+      [plugins]="lineChartPlugins" [legend]="lineChartLegend" [chartType]="lineChartType">
+    </canvas>
+    <h3>Average Duration : {{avgAge}}</h3>
+  </div>
+
+  <div class="buttons">
+    <!--select ng-model="selectedName" ng-options="x for x in timeFrame">
         </select-->
-        
-        
-        <button id="button1" (click) = "calenderopen()"><mat-icon>today</mat-icon> <h4 id="label1">Calender</h4></button>
-        <button id="button2"><mat-icon>drafts</mat-icon><h4 id="label2">Messages</h4></button>
-        <button id="button3"><mat-icon>feedback</mat-icon><h4 id="label3">Feedback</h4></button>
-        <button id="button4"><mat-icon>date_range</mat-icon><h4 id="label4">Date Range</h4></button> 
-        <!--buttid="n>Calen"der</button>
-        <button>Inbox <mat-icon></mat-icon></button>
-        <button>Feedback <mat-icon></mat-icon></button-->
-        
-    </div>
 
-    <!--div id="fullCalender" [style.display] = "isVisible ? 'block' : 'none'">
+
+    <button id="button1" (click)="calenderopen()">
+      <mat-icon>today</mat-icon>
+      <h4 id="label1">Calender</h4>
+    </button>
+    <button id="button2">
+      <mat-icon>drafts</mat-icon>
+      <h4 id="label2">Messages</h4>
+    </button>
+    <button id="button3">
+      <mat-icon>feedback</mat-icon>
+      <h4 id="label3">Feedback</h4>
+    </button>
+
+
+
+  </div>
+
+  <!--div id="fullCalender" [style.display] = "isVisible ? 'block' : 'none'">
     </div-->
-    
+
 </div>
 
 <!--full-calendar [options]="calendarOptions" style="background-color: rgb(255, 255, 255); padding: 15px; height: fit-content; width: max-content;"></full-calendar-->
-    

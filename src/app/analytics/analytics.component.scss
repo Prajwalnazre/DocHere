@@ -1,6 +1,6 @@
 #outerAnalytics{
     display: grid ; 
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 12% 25% 25% 25% 13%;
     //background-color: cornsilk;
     grid-template-areas: "analyticsContainer pieChart lineGraph1 lineGraph2 buttons";
     max-height: 450px;
@@ -20,8 +20,10 @@
     height: 180px;
     //width: fit-content;
     max-width: 150px;
+    min-width: 120px;
     margin: 1rem;
     margin-top: 0.5rem;
+    //margin-left: 1rem;
     //margin-bottom: 10rem;
     //margin: 15px;
     padding: 3px;
@@ -85,6 +87,7 @@
     height: auto;
     height: 180px;
     //width: 280px;
+    min-width: 240px;
     //width: auto;
     width: min-content;
     padding: 5px;
@@ -110,6 +113,7 @@
     height: 180px;
     width: min-content;
     grid-area: lineGraph1;
+    min-width: 240px;
     padding: 5px;
     margin: 1rem;
     margin-left: 0rem;
@@ -145,6 +149,7 @@
     height: 180px;
     //height: auto;
     width: min-content;
+    min-width: 240px;
     grid-area: lineGraph2;
     padding: 5px;
     margin: 1rem;
@@ -250,9 +255,10 @@
         //display:block;
         //background-color: burlywood;
         //display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "pieChart lineGraph2 lineGraph1 analyticsContainer"
+        grid-template-columns: 10% 30% 30% 30%;
+        grid-template-rows: 50% 50%;
+        grid-gap: 3px;
+        grid-template-areas: "analyticsContainer pieChart lineGraph2 lineGraph1"
         "buttons buttons buttons buttons";
         justify-content: center;
         text-align: center;

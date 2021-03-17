@@ -1,4 +1,9 @@
 import { Component, OnInit } from '@angular/core';
+import { FormGroup, FormBuilder } from '@angular/forms';
+import { FormControl } from '@angular/forms';
+​
+declare  var cal:  any;
+//declare var name: any;
 
 const USER_INFO = [
   {"token":1,"name": "John Smith", "age": 36, "Gender": "M", "visit":"March 4, 2021, 1:21 p.m", "Fee" : 7000, "Report":"Report" },
@@ -30,6 +35,10 @@ export class PastComponent implements OnInit {
   dataSource = USER_INFO;
   dataSchema = USER_SCHEMA;
   flag = false;
+  range = new FormGroup({
+    start: new FormControl(),
+    end: new FormControl()
+  });
 /*
   disableScrolling() { 
     setTimeout(function() { 
@@ -62,9 +71,22 @@ enableScrolling() {
     this.flag = true  
   }
 
-  constructor() { }
 
+  constructor(private fb: FormBuilder) { }
+  
   ngOnInit(): void {
+
   }
+    //new name();
+    
+    //new cal();
+    // $(function() {
+    //   $('input[name="daterange"]').daterangepicker({
+    //     opens: 'left'
+    //   }, function(start, end, label) {
+    //     console.log("A new date selection was made: " + start.format('YYYY-MM-DD') + ' to ' + end.format('YYYY-MM-DD'));
+    //   });
+    // });
+  
 
 }
