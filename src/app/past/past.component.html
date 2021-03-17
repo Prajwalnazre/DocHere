@@ -1,24 +1,18 @@
-
+<mat-form-field appearance="outline" style="height: 70px;">
+  <mat-label>Select Date Range</mat-label>
+  
+  <mat-date-range-input [rangePicker]="picker" [formGroup]="range">
+    <input matStartDate placeholder="Start Date" formControlName="start" readonly="readonly">
+    <input matEndDate placeholder="End Date" formControlName="end" readonly="readonly">
+  </mat-date-range-input>
+  
+  <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
+  
+  <mat-date-range-picker #picker></mat-date-range-picker>
+</mat-form-field>
 <article>
   <div style="display: block;">
-    <div id="searchBar" style="display: grid; grid-template-columns: 30% 70%;">
-      <mat-form-field appearance="outline" style="height: 80px;">
-        <mat-label>Select Date Range</mat-label>
-        
-        <mat-date-range-input [rangePicker]="picker" [formGroup]="range">
-          <input matStartDate placeholder="Start Date" formControlName="start" readonly="readonly">
-          <input matEndDate placeholder="End Date" formControlName="end" readonly="readonly">
-        </mat-date-range-input>
-        
-        <mat-datepicker-toggle matSuffix [for]="picker"></mat-datepicker-toggle>
-        
-        <mat-date-range-picker #picker></mat-date-range-picker>
-      </mat-form-field>
-      <!-- <h1>{{range.value.start | date}}</h1>
-      <h1>{{range.value.end | date}}</h1> -->
-      <div id="pastHeading" style=""><p>Patients Visited</p></div>
-    </div>
-
+    <div id="pastHeading"><p>Patients Visited<p></div>
     <div class="tableHolder" #tabH (mouseenter)="enableScrolling()" [style.overflow-y]="flag ? 'scroll':'hidden'"
       (mouseleave)="disableScrolling()" (mouseover)="enableScrolling()">
 
