@@ -3,7 +3,7 @@
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.0-next.0.
 
 This is the doctor UI made using Angular 11
-![Doctor Portal](https://github.com/Prajwalnazre/CFD/blob/main/cars/car_002.png)
+![Doctor Portal](https://github.com/Prajwalnazre/DocHere/blob/master/doctorUI.png)
 
 ## Development server
 
